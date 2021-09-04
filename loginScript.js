@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     forgotPassword.addEventListener('submit', (e) => {
+        e.preventDefault();
         if (emailForgotPassword.value !== '') {
             setMessage(forgotPassword, 'success', 'A reset password link is sent to your email!');
         } else {
